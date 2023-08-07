@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #c54c82;
+}
+
+.dark-theme {
+  --primary-color: #c54c82;
+  --secondary-color: white;
+}
+
+h1 {
+  padding: 30px;
+}
+
+p1,
+p2,
+p3 {
+  color: black;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p3 {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.container1 {
+  text-align: center;
+  padding-top: 40px;
+  line-height: 40px;
+}
+
+.container2 {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px var(--primary-color),
+    -8px -8px 15px var(--primary-color);
+  background: transparent;
+  font-size: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+  box-shadow: -8px -8px 15px var(--primary-color),
+    -8px -8px 15px var(--primary-color);
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+form input.equal {
+  width: 145px;
+}
+
+form input.operator {
+  color: var(--primary-color);
+}
+
+#icon {
+  cursor: pointer;
+}
